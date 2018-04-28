@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var Highlighter = require("react-highlight-words");
 require("./react-dadata.css");
-var ReactDadataFio = /** @class */ (function (_super) {
+var ReactDadataFio = (function (_super) {
     __extends(ReactDadataFio, _super);
     function ReactDadataFio(props) {
         var _this = _super.call(this, props) || this;

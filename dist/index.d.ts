@@ -8,11 +8,12 @@ export declare namespace ReactDadataFio {
         data: DadataFio;
     };
     type DadataFio = {
-      surname: string,
-      name: string,
-      patronymic: string,
-      gender: "MALE" | "FEMALE" | "UNKNOWN",
-    }
+        surname: string;
+        name: string;
+        patronymic: string;
+        gender: "MALE" | "FEMALE" | "UNKNOWN";
+        qc: string;
+    };
     interface Props {
         token: string;
         placeholder?: string;
@@ -29,7 +30,7 @@ export declare namespace ReactDadataFio {
         suggestionsVisible: boolean;
     }
 }
-export declare class ReactDadataFio extends React.PureComponent<ReactDadata.Props, ReactDadata.State> {
+export declare class ReactDadataFio extends React.PureComponent<ReactDadataFio.Props, ReactDadataFio.State> {
     /**
      * HTML-input
      */
@@ -38,7 +39,7 @@ export declare class ReactDadataFio extends React.PureComponent<ReactDadata.Prop
      * XMLHttpRequest instance
      */
     protected xhr: XMLHttpRequest;
-    constructor(props: ReactDadata.Props);
+    constructor(props: ReactDadataFio.Props);
     componentDidMount(): void;
     onInputFocus: () => void;
     onInputBlur: () => void;

@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as Highlighter from 'react-highlight-words';
 import './react-dadata.css';
 
-export namespace ReactFioDadata {
+export namespace ReactDadataFio {
   export type DadataSuggestion = {
     value: string
     unrestricted_value: string
