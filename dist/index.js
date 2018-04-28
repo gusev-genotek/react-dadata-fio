@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var Highlighter = require("react-highlight-words");
 require("./react-dadata.css");
-var ReactDadataFio = (function (_super) {
+var ReactDadataFio = /** @class */ (function (_super) {
     __extends(ReactDadataFio, _super);
     function ReactDadataFio(props) {
         var _this = _super.call(this, props) || this;
@@ -110,7 +110,7 @@ var ReactDadataFio = (function (_super) {
             }
         };
         _this.getHighlightWords = function () {
-            var wordsToPass = [''];  //add the words to be highlighted
+            var wordsToPass = ['']; //add the words to highlight as desired
             var words = _this.state.inputQuery.replace(',', '').split(' ');
             words = words.filter(function (word) {
                 return wordsToPass.indexOf(word) < 0;
