@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as Highlighter from 'react-highlight-words';
 import './react-dadata.css';
 
-export namespace ReactGeolocationDadata {
+export namespace ReactFioDadata {
   export type DadataSuggestion = {
     value: string
     unrestricted_value: string
@@ -34,7 +34,7 @@ export namespace ReactGeolocationDadata {
   }
 }
 
-export class ReactDadata extends React.PureComponent<ReactDadata.Props, ReactDadata.State> {
+export class ReactDadataFio extends React.PureComponent<ReactDadataFio.Props, ReactDadataFio.State> {
 
   /**
    * HTML-input
@@ -46,7 +46,7 @@ export class ReactDadata extends React.PureComponent<ReactDadata.Props, ReactDad
    */
   protected xhr: XMLHttpRequest;
 
-  constructor(props: ReactDadata.Props) {
+  constructor(props: ReactDadataFio.Props) {
     super(props);
 
     this.state = {
@@ -167,7 +167,7 @@ export class ReactDadata extends React.PureComponent<ReactDadata.Props, ReactDad
   };
 
   getHighlightWords = (): Array<string> => {
-    const wordsToPass = ['г', 'респ', 'ул', 'р-н', 'село', 'деревня', 'поселок', 'пр-д', 'пл', 'к', 'кв', 'обл', 'д'];
+    const wordsToPass = ['']; //add the words to highlight as desired
     let words = this.state.inputQuery.replace(',', '').split(' ');
     words = words.filter((word) => {
       return wordsToPass.indexOf(word) < 0;
