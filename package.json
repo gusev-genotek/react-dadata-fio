@@ -1,6 +1,6 @@
 {
   "name": "react-dadata-fio",
-  "version": "1.1.4",
+  "version": "1.0.0",
   "description": "React-компонент для подсказок фио с помощью сервиса DaData.ru",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

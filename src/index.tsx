@@ -14,6 +14,7 @@ export namespace ReactFioDadata {
     name: string,
     patronymic: string,
     gender: "MALE" | "FEMALE" | "UNKNOWN",
+    qc: string
   }
 
   export interface Props  {
