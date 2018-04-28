@@ -110,7 +110,7 @@ var ReactDadataFio = (function (_super) {
             }
         };
         _this.getHighlightWords = function () {
-            var wordsToPass = ['г', 'респ', 'ул', 'р-н', 'село', 'деревня', 'поселок', 'пр-д', 'пл', 'к', 'кв', 'обл', 'д'];
+            var wordsToPass = [''];  //add the words to be highlighted
             var words = _this.state.inputQuery.replace(',', '').split(' ');
             words = words.filter(function (word) {
                 return wordsToPass.indexOf(word) < 0;
