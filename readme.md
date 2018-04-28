@@ -3,6 +3,8 @@ React-компонент для подсказок ФИО с помощью се
 
 <img width="728" alt="React Dadata Fio" src="https://user-images.githubusercontent.com/724423/29621151-9ea462b6-8828-11e7-88ba-07f9619c0182.png">
 
+![Demo Animation](../assets/reactdadatafio.png?raw=true)
+
 ### Установка
 ```
 npm install react-dadata-fio
